@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter Variable', sans-serif;
+}
+
+.Vue-Toastification__container {
+  bottom: 18px !important;
+  width: min(92vw, 320px) !important;
+}
+
+.Vue-Toastification__toast {
+  min-height: 46px !important;
+  padding: 10px 12px !important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.Vue-Toastification__toast-body {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.Vue-Toastification__toast-body svg,
+.Vue-Toastification__toast-body img,
+.Vue-Toastification__icon {
+  flex-shrink: 0 !important;
+  margin: 1 !important;
+}
+
+.Vue-Toastification__close-button {
+  font-size: 14px !important;
+  margin-left: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 480px) {
+  .Vue-Toastification__container {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: calc(100vw - 24px) !important;
+  }
+}
